@@ -94,6 +94,14 @@
           }
         ]
       }
+    },
+    "repro": {
+      "cache": true,
+      "executor": "nx:noop",
+      "outputs": [
+        "{projectRoot}/dist/**",
+        "!{projectRoot}/dist/bin/*.sh"
+      ]
     }
   },
   "tags": ["type:app", "scope:cart"],
